@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BookExpress</title>
+   <link rel="shortcut icon" href="images/logo.jpg">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-1">
+         <div class="flex">
+            <div class="share">
+               <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+               <a href="https://twitter.com/" class="fab fa-twitter"></a>
+               <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+               <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+            <p> New <a href="login.html">Login</a> | <a href="register.html">Register</a> </p>
+         </div>
+      </div>
+      
+      <div class="header-2">
+         <div class="flex">
+            <a href="index.html" class="logo">BookExpress</a>
+            <nav class="navbar">
+               <a href="index.html">Home</a>
+               <a href="about.html">About</a>
+               <a href="shop.html">Shop</a>
+               <a href="contact.html">Contact</a>
+               <a href="orders.html">Orders</a>
+            </nav>
+            <div class="icons">
+               <div id="menu-btn" class="fas fa-bars"></div>
+               <a href="search_page.html" class="fas fa-search"></a>
+               <div id="user-btn" class="fas fa-user"></div>
+               <a href="cart.html"> <i class="fas fa-shopping-cart"></i> <span></span> </a>
+            </div>
+            <div class="user-box">
+               <p>Username : <span></span></p>
+               <p>Email : <span></span></p>
+               <a href="login.html" class="delete-btn">Logout</a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="heading">
+      <h3>Shopping Cart</h3>
+      <p> <a href="index.html">Home</a> / Cart </p>
+   </div>
+
+   <section class="shopping-cart">
+      <h1 class="title">Products Added</h1>
+
+      <div class="box-container">
+         <div class="box">
+            <a href="cart.html" class="fas fa-times" onclick="return confirm('Delete this from cart?');"></a>
+            <img src="images/history_of_modern_architecture.jpg" alt="">
+            <div class="name"></div>
+            <div class="price">$190/-</div>
+            <form action="" method="post">
+               <input type="hidden" name="cart_id" value="">
+               <input type="number" min="1" name="cart_quantity" value="">
+               <input type="submit" name="update_cart" value="update" class="option-btn" onclick="myFunction()">
+            </form>
+            <div class="sub-total"> Sub Total : <span>$190/-</span> </div>
+         </div>
+      </div>
+
+      <div style="margin-top: 2rem; text-align:center;">
+         <a href="cart.html" class="delete-btn" onclick="return confirm('Delete all from cart?');">Delete All</a>
+      </div>
+
+      <div class="cart-total">
+         <p>Grand Total : <span>$190/-</span></p>
+         <div class="flex">
+            <a href="shop.html" class="option-btn">Continue Shopping</a>
+            <a href="checkout.html" class="btn">Proceed to checkout</a>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+
+   <script>
+      function myFunction() {
+         alert("Updated Sucessfully!");
+      }
+   </script>
+</body>
+
+<section class="footer">
+   <div class="box-container">
+      <div class="box">
+         <h3>Quick Links</h3>
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="shop.html">Shop</a>
+         <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="box">
+         <h3>Extra Links</h3>
+         <a href="login.html">Login</a>
+         <a href="register.html">Register</a>
+         <a href="cart.html">Cart</a>
+         <a href="orders.html">Orders</a>
+      </div>
+
+      <div class="box">
+         <h3>Contact Info</h3>
+         <p> <i class="fas fa-phone"></i> +91 8374728489</p>
+         <p> <i class="fas fa-envelope"></i> vinaykrishnasanka@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i> Kolakaluru(p.o), Tenali(m.d), Guntur(d.t), AP, India - 522307 </p>
+      </div>
+
+      <div class="box">
+         <h3>Follow Us</h3>
+         <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> Facebook </a>
+         <a href="https://twitter.com/"> <i class="fab fa-twitter"></i> Twitter </a>
+         <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> Instagram </a>
+         <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> Linkedin </a>
+      </div>
+   </div>
+
+   <p class="credit"> &copy; copyright @ 2023 by <span>VinayKrishna.S</span></p>
+</section>
+
+</html>
